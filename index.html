@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vollbild PDF</title>
+    <title>Vollbild Bild mit Button</title>
     <style>
         html, body {
             margin: 0;
@@ -11,14 +11,41 @@
             height: 100%;
         }
 
-        iframe {
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            position: relative;
+        }
+
+        img {
             width: 100%;
             height: 100%;
-            border: none;
+            object-fit: cover;
+        }
+
+        .button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <iframe src="https://www.mediafire.com/file/go8o2q5we20ukt2/Rekorder%25232_zeitreisen.pdf"></iframe>
+    <img src="https://i.postimg.cc/gX4bmQJS/Rekorder-zeitreisen-1.png" alt="Vollbild Bild">
+    <a href="/zeitreisen-2.html" class="button">Weiter</a>
 </body>
 </html>
